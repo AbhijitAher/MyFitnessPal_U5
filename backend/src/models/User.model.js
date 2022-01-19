@@ -12,6 +12,7 @@ const userSchema = new Schema(
 		height: { type: Number, required: true },
 		weight: { type: Number, required: true },
 		goal_weight: { type: Number, required: true },
+		password: { type: String, required: true },
 	},
 	{
 		versionKey: false,
