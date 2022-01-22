@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Rice",
+    "calories": 160,
+    "carbs": 36,
+    "fat": 1,
+    "protein": 3
+  },
+  {
+    "name": "Rice Bowl",
+    "calories": 160,
+    "carbs": 35,
+    "fat": 0,
+    "protein": 3
+  },
+  {
+    "name": "Pilau Rice",
+    "calories": 171,
+    "carbs": 31,
+    "fat": 3,
+    "protein": 4
+  },
+  {
+    "name": "Mexican Rice",
+    "calories": 199,
+    "carbs": 29,
+    "fat": 8,
+    "protein": 3
+  },
+  {
+    "name": "Black Rice",
+    "calories": 160,
+    "carbs": 34,
+    "fat": 2,
+    "protein": 5
+  },
+  {
+    "name": "Red Rice",
+    "calories": 150,
+    "carbs": 36,
+    "fat": 0,
+    "protein": 3
+  },
+  {
+    "name": "Apple",
+    "calories": 52,
+    "carbs": 14,
+    "fat": 0,
+    "protein": 0
+  },
+  {
+    "name": "Apple Fritter",
+    "calories": 300,
+    "carbs": 41,
+    "fat": 14,
+    "protein": 4
+  },
+  {
+    "name": "Bannan",
+    "calories": 105,
+    "carbs": 27,
+    "fat": 0,
+    "protein": 1
+  },
+  {
+    "name": "Bannan Bread",
+    "calories": 88,
+    "carbs": 23,
+    "fat": 0,
+    "protein": 1
+  },
+  {
+    "name": "Bannan Nut Muffin",
+    "calories": 210,
+    "carbs": 25,
+    "fat": 11,
+    "protein": 3
+  },
+  {
+    "name": "sprouts",
+    "calories": 150,
+    "carbs": 13,
+    "fat": 8,
+    "protein": 7
+  },
+  {
+    "name": "Pretzels",
+    "calories": 110,
+    "carbs": 23,
+    "fat": 1,
+    "protein": 3
+  },
+  {
+    "name": "Chicken",
+    "calories": 120,
+    "carbs": 0,
+    "fat": 1,
+    "protein": 26
+  },
+  {
+    "name": "Roti",
+    "calories": 120,
+    "carbs": 20,
+    "fat": 4,
+    "protein": 3
+  },
+  {
+    "name": "Dal",
+    "calories": 150,
+    "carbs": 21,
+    "fat": 2,
+    "protein": 7
+  },
+  {
+    "name": "Panchratan Dal",
+    "calories": 444,
+    "carbs": 64,
+    "fat": 12,
+    "protein": 24
+  },
+  {
+    "name": "Apple Juice",
+    "calories": 110,
+    "carbs": 28,
+    "fat": 0,
+    "protein": 1
+  },
+  {
+    "name": "Mango juice",
+    "calories": 120,
+    "carbs": 30,
+    "fat": 0,
+    "protein": 0
+  },
+  {
+    "name": "Black Coffee",
+    "calories": 5,
+    "carbs": 0,
+    "fat": 0,
+    "protein": 0
+  },
+  {
+    "name": "Tea",
+    "calories": 50,
+    "carbs": 0,
+    "fat": 1,
+    "protein": 1
+  }
+]
