@@ -64,10 +64,6 @@ console.log("Data:",data);
       <div id="home_body_5">
         <div id="home_body_5_sec1">
           <h2>Recipes & Inspiration</h2>
-          <p>
-            Get nutritionist-approved recipes and motivational workout tips from
-            MyFitnessPal experts.
-          </p>
         </div>
         <div id="food_body_1">
           

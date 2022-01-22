@@ -2,10 +2,12 @@ const express = require("express");
 const { login, register } = require("./controllers/auth.controller");
 const userController = require("./controllers/user.controller");
 const passport = require("./configs/passport");
+const foodController = require("./controllers/food.controller")
 
 const app = express();
 app.use(express.json());
 
+app.use("/foods",foodController)
 app.use("/users", userController);
 app.use("/login", login);
 app.post("/register", register);
