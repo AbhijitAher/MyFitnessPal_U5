@@ -19,6 +19,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/food" element={<Food />}></Route>
+        <Route path="/food/:name" element={<Food/>}></Route>
 
 				{/* Signup Page 1 */}
 				<Route path="/signup/welcome" element={<Welcome />}></Route>
@@ -44,6 +45,7 @@ function App() {
 			<Footer />
 		</div>
 	);
+
 }
 
 export default App;
