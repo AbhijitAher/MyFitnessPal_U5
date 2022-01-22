@@ -7,10 +7,6 @@
   gap: 20px;
 }
 
-#noDataImg {
-  width: 70%;
-  margin: auto;
-}
 #food_Search {
   width: 90%;
   height: 55px;
@@ -61,3 +57,72 @@
 
   border-radius: 10px;
 }
+#noDataDiv{
+  text-align: center;  
+  }
+  #noDataDiv h5 {
+    font-size:22px;
+    margin-bottom: 20px;
+  }
+  #noDataDiv p {
+    width: 60%;
+    margin:auto;
+  }
+  #noDataImg {
+    width: 70%;
+    margin: auto;
+  }
+  
+  #dataDiv{
+  display: none;
+  }
+  #no_food_search_data_div{
+    display: none;
+  }
+  #food_search_data_div{
+   width: 90%; 
+  display:flex;
+  flex-direction: column;
+  }
+  .food_search_result_div{
+    padding: 10px;
+    border-bottom: 2px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .food_search_result_div h5{
+    color: #0066ee;
+    font-size:16px;
+    font-weight:500;
+    margin-bottom: 20px;
+  }
+  
+  .food_search_result_div_sec_1 div {
+    display: flex;
+    gap: 20px;
+  }
+  .food_search_result_div_sec_1 div p{
+font-size: 14px;
+  }
+  .food_search_result_div_sec_1 div div {
+    display: flex;
+    gap: 20px;
+  }
+  .food_search_result_div_sec_1 div div li {
+    font-size: 14px;
+  }
+  .calories_circle{
+    border-left: 3px solid #0ABFC8;
+    border-right: 3px solid #0ABFC8;
+    border-bottom: 3px solid #0ABFC8;
+    border-top: 3px solid red;
+    width: 50px;
+    height:50px;
+    border-radius:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:17px;
+    font-weight:600;
+  }

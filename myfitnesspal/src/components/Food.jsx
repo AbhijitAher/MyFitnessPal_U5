@@ -10,6 +10,8 @@ useEffect(()=>{
 getData();
 },[])
 
+console.log(data.length)
+
   let { name } = useParams();
 
   const getData = () => {
@@ -59,7 +61,35 @@ console.log("Data:",data);
       <button id="foodSearchBtn" onClick={handleSearch}>
         <i className="fas fa-search"></i> 
       </button>
-      <img id="noDataImg" src="https://www.myfitnesspal.com/react-static/e95f17aa29d83b7a7588a0f825f7b66f.svg" alt="" />   
+
+      <div id={data.length===0 ? "noDataDiv" : "dataDiv"}>
+      <img id="noDataImg" src="https://www.myfitnesspal.com/react-static/e95f17aa29d83b7a7588a0f825f7b66f.svg" alt="" />
+      <h5>Food Analysis</h5>
+      <p>Understand how the food you’re eating contributes to your daily calories, macronutrients, and micronutrients.</p>   
+      </div>
+        
+      <div id={data.length !== 0 ? "food_search_data_div" : "no_food_search_data_div"}>
+      {data.map((e,i) => (
+        <div key={i} className="food_search_result_div">
+          <div className="food_search_result_div_sec_1">
+          <h5>{data[i].recipe.label}</h5>
+          <div>
+
+          
+          <p>Calories : {Math.floor(data[i].recipe.calories)}</p>
+
+          <div>
+          <li>Fat : {Math.floor(data[i].recipe.digest[0].total)} mg</li>
+          <li>Carbs : {Math.floor(data[i].recipe.digest[1].total)} mg</li>
+          <li>Protein : {Math.floor(data[i].recipe.digest[2].total)} mg</li>
+          </div>
+          </div>
+          </div>
+          <div className="calories_circle"> {Math.floor(data[i].recipe.calories)} </div>
+        </div>
+      ))} 
+      </div> 
+
 
       <div id="home_body_5">
         <div id="home_body_5_sec1">
