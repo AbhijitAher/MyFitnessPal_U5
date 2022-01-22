@@ -5,12 +5,15 @@ const { uuid } = require("uuidv4");
 
 const User = require("../models/user.model");
 
+const { newToken } = require("../controllers/auth.controller"); // *
+
 passport.use(
 	new GoogleStrategy(
 		{
 			clientID: process.env.GOOGLE_CLIENT_ID,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-			callbackURL: "http://localhost:2626/auth/google/callback", // host url
+			callbackURL: "http://localhost:2626/auth/google/callback",
+			userProfileURL: "https://**www**.googleapis.com/oauth2/v3/userinfo",
 			passReqToCallback: true,
 		},
 		async function (request, accessToken, refreshToken, profile, done) {
@@ -27,7 +30,9 @@ passport.use(
 					password: uuid(),
 				});
 			}
-			return done(null, "user");
+			const token = newToken(user);
+			return done(null, { user, token });
+			// return done(null, "user");
 		}
 	)
 );
