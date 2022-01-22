@@ -1,0 +1,289 @@
+.bottom_nav_div{
+    width: 100%;
+    height: 1000px;
+    opacity: 1;
+    position: absolute;
+    inset: 0px;
+    background:url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=1920&q=75");
+   background-repeat:repeat;
+    background-attachment: fixed;
+    background-size:cover;
+  object-fit: cover;
+  background-color: #F0F2F4;
+}
+.Address_div{
+    box-sizing: border-box;
+    margin:150px auto;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width:600px;
+    height:700px;
+    border-radius: 12px;
+    color: rgb(34, 38, 40);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+   background-color: white;
+   box-shadow: rgb(0 0 0 / 12%) 0px 8px 40px;
+}
+.Address_bottom_div{
+    width:90%;
+    height:600px;
+    border-radius: 12px;
+    color: rgb(34, 38, 40);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    margin:30px auto;
+}
+.order_ul {
+    width:90%;
+    height:600px;
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    row-gap:30px;
+    text-align:left;
+    margin: auto;
+}
+.list_li {
+    width: 80%;
+    display: inline-block;
+   
+}
+.gender_type{
+    width: 60%;
+    height: 60px;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+   
+    justify-content:space-between;
+}
+.radio {
+    color: #222628;
+    font-size: 22px;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    cursor: pointer; 
+    margin-top: -40px; 
+}
+.head_para{
+    text-align: left;
+    font-size: 22px;
+    color: #222628;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif; 
+}
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:26px;
+    height:24px;
+    border:1px solid  rgb(0, 102, 238);;
+    border-radius:50%;
+    margin-right: 10px;
+    outline:none;
+  
+}
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%; 
+    
+}
+input[type='radio']:checked:before {
+    
+    background: rgb(0, 102, 238);
+}
+
+.born_detail{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin-top: -20px;
+    width: 100%;
+    height: 80px;
+}
+.dates{
+    width: 40%;
+    height: 40px;
+}
+input[type="date"]{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #6D717A;
+    border-radius: 4px;
+    border: 2px solid rgb(222, 225, 231);
+}
+input[type="date"]:focus{
+outline-color: rgb(0, 102, 238);
+}
+.detail{
+    width: 45%;
+    height: 34px;
+}
+.textbox{
+    width:90%;
+   
+}
+
+
+.pin1{
+    width: 90%;
+    border: 2px solid grey;
+    border-radius: 5px;
+   
+    background: none;
+    padding: 5px;
+    color: #222628;
+    height:34px
+}
+.pin1{
+    color: #222628;
+    font-size: 14px;
+    border: 2px solid rgb(222, 225, 231);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    
+}
+.pin{
+    position: relative;
+    top: -2.4rem;
+   left: 1.4rem;
+    cursor: text;
+
+}
+.pin{
+    color: #6D717A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 5px;
+    padding-left: 5px;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    background-color: white;
+    
+}
+.pin1:focus{
+    outline-color: rgb(0, 102, 238);
+}
+
+.pin1:focus~.pin{
+    top: -3.9rem;
+    left: 1rem;
+    font-size: 14px;
+  
+    background: white;
+}
+.textbox{
+    color: #222628;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    background-color: white;
+}
+.form_label{
+    position: absolute;
+    top: 655px;
+    left: 630px;
+    cursor: text;
+    background-color: white;
+
+}
+.form_label{
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    color: #222628;
+    
+}
+
+.bottom_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:80%;
+    height: 80px;
+    margin-top:20px;
+}
+.BN{
+    border: 2px solid rgb(0, 102, 238);
+
+    width: 48%;
+    height: 60px;
+    border-radius: 4px;
+    padding: 8px 20px;
+    letter-spacing: 0.015625rem;
+  
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    transition: background-color 250ms
+}
+.btn2_next{
+    color:white;
+    background-color: rgb(0, 102, 238);;
+}
+.btn1_back{
+    color: rgb(0, 102, 238);
+    background-color: white;
+}
+.para_text{
+    text-align: center;
+    width: 80%;
+    color: #6D717A;
+    font-size: 17px;
+}
+@media(max-width:800px) {
+    .weight_goal{
+        margin-top:50px;
+        width: 100%;
+
+    }
+    .bottom_div{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .BN{
+        width: 100%;
+        padding: 0px;
+    }
+    .btn2_next{
+        width:100%;
+        display: inline-block;
+    }
+    .btn1_back{
+
+        visibility: hidden;
+    }
+   
+  }
+ 
+  
+ 
+ 
