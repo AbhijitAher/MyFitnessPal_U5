@@ -109,7 +109,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="home_corousel">
-          <img src="./Images/homepage/corousel.jpg" alt="" />
+          <img src="./Images/homepage/corousel_1.jpg" alt="" />
         </div>
       </div>
       <div id="home_body_5">
