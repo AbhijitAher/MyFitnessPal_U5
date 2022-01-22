@@ -1,15 +1,10 @@
 import "./Homepage.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export const HomePage = () => {
   const [text,setText] = useState("");
 
-  const navigate = useNavigate();
-
- const getData = () => {
-   console.log(text)
- }
 
   return (
     <div>
@@ -20,7 +15,7 @@ export const HomePage = () => {
             Take control of your goals. Track calories, break down ingredients,
             and log activities with MyFitnessPal.
           </p>
-          <Link to="/signup">
+          <Link to="/signup/welcome">
             {" "}
             <button>START FOR FREE</button>{" "}
           </Link>
@@ -40,13 +35,15 @@ export const HomePage = () => {
         </div>
       </div>
       <div id="home_body_2">
+
         <input
-          id="home_input_box"
+          id="home_input_search_box"
           value={text}
           onChange={(e) => setText(e.target.value)}
           type="text"
           placeholder="Get the nutrition for any food, like an apple"
         />
+
        <Link to={`/food/${text}`}>
        <button id="search_button">
           <i className="fas fa-search"></i>
@@ -97,7 +94,7 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-        <Link to="/signup">
+        <Link to="/signup/welcome">
           {" "}
           <button id="start_journey_btn">START YOUR JOURNEY TODAY</button>{" "}
         </Link>

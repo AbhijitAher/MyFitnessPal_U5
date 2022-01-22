@@ -42,7 +42,7 @@
     margin:30px auto;
 }
 
-ul {
+/* ul {
     width:90%;
     height:600px;
     list-style: none;
@@ -55,7 +55,7 @@ ul {
 li {
     display: inline-block;
    
-}
+} */
 .weight_type{
     width:100%;
     height: 100px;
@@ -69,10 +69,10 @@ li {
     padding-bottom: 30px;
 }
 
-input {
+/* input {
     visibility:hidden;
-}
-label {
+} */
+/* label {
     display: flex;
     flex-direction: column;
     column-gap: 0px;
@@ -90,19 +90,19 @@ p{
     line-height: 1.5;
     font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
    
-}
+} */
 .activity_para{
     font-size: 18px;
     margin-top: -10px;
 }
-span{
+/* span{
     color: #222628;
 }
 
 input:checked + label>p>span{
     color: rgb(0, 102, 238);
     
-}
+} */
 .weight_type:hover{
     border-color: grey;
 }

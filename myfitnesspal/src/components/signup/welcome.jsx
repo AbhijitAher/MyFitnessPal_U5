@@ -1,5 +1,6 @@
 import React from "react";
 import "./welcome.css";
+import {Link} from "react-router-dom"
 //import React from "react";
 //import "./welcome_nav.css"
 export const Welcome = () => {
@@ -8,7 +9,9 @@ export const Welcome = () => {
 			<div className="nav_container">
 				<div className="nav">
 					<div className="btn1">
-						<button className="myfit">myfitnesspal</button>
+					<Link to="/">
+					<button className="myfit">myfitnesspal</button>
+						</Link>	
 					</div>
 					<div className="btn1">
 						<button className="log">Login</button>
