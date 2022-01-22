@@ -7,10 +7,21 @@ export const HomePage = () => {
   const [index,setIndex] = useState(0);
 
   const image = ["https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_1.jpg?raw=true",
-"https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_2.jpg?raw=true",
+"https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel-2.jpg?raw=true",
 "https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_3.jpg?raw=true"] 
    
-  useEffect(() => {});
+useEffect(() => {
+  setTimeout(
+    () =>
+      setIndex((prevIndex) =>
+        prevIndex === image.length - 1 ? 0 : prevIndex + 1
+      ),
+    6000
+  );
+
+  return () => {};
+}, [index]);
+
 
   return (
     <div>
@@ -113,16 +124,15 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="home_corousel">
-          {/* ---------------------------------------------------------------- */}
 
           <div className="home_corousel_sec_1">
             <div
-              className="whitespace-nowrap transition ease-linear duration-1000"
+              className="home_corousel_sec_1_1"
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
               {image.map((e, i) => (
                 <img
-                  className="w-full inline-block"
+                  className="home_corousel_img"
                   src={e}
                   key={i}
                   alt="img"
@@ -145,7 +155,7 @@ export const HomePage = () => {
             </div>
           </div>
 
-          {/* --------------------------------------------------------------------------------         */}
+         
         </div>
       </div>
       <div id="home_body_5">
