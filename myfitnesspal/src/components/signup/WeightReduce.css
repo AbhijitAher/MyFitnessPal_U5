@@ -1,0 +1,168 @@
+.navigation_bottom_div{
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    inset: 0px;
+    height: 1000px;
+    background:url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=1920&q=75");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #F0F2F4;
+}
+.weight_choose_goal{
+    box-sizing: border-box;
+    margin:150px auto;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width:40%;
+    height:800px;
+    border-radius: 12px;
+    color: rgb(34, 38, 40);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+   background-color: white;
+   box-shadow: rgb(0 0 0 / 12%) 0px 8px 40px;
+}
+.weight_selection{
+    width:85%;
+    height:800px;
+    border-radius: 12px;
+    color: rgb(34, 38, 40);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    margin:50px auto;
+}
+.heading{
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+.order {
+ 
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+    text-align:left;
+    margin:50px auto;
+}
+.para{
+    color: #6D717A;
+    font-size: 18px;
+}
+.list {
+  
+    display: inline-block;
+   
+}
+.weightsel_type{
+    width:90%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 1.75;
+    border: 2px solid rgb(222, 225, 231);
+    color: rgb(34, 38, 40);
+    text-transform: none;
+    border-radius: 4px;
+    margin: 2px 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 14px;
+}
+.weightsel_type:active{
+    outline:2px solid rgb(0, 102, 238);
+}
+.weightsel_type:hover{
+    outline:2px solid rgb(0, 102, 238);
+}
+input {
+    visibility:hidden;
+}
+label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    cursor: pointer;
+}
+input:checked + label {
+    color: rgb(0, 102, 238);
+    font-weight: 600;
+    
+}
+
+.button_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:80%;
+    height: 80px;
+    margin:80px auto;
+}
+.button_bn{
+    border: 2px solid rgb(0, 102, 238);
+
+    width: 48%;
+    height: 60px;
+    border-radius: 4px;
+    padding: 8px 20px;
+    letter-spacing: 0.015625rem;
+  
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    transition: background-color 250ms
+}
+.next_btn{
+    color:white;
+    background-color: rgb(0, 102, 238);;
+}
+.back_btn{
+    color: rgb(0, 102, 238);
+    background-color: white;
+}
+@media(max-width:800px) {
+    .weight_choose_goal{
+        margin-top:50px;
+        width: 100%;
+
+    }
+    .button_footer{
+        margin-top: 30px;
+    }
+    .button_btn{
+        width: 100%;
+        padding: 0px;
+    }
+    .next_btn{
+        width:700px;
+        display: inline-block;
+    }
+    .back_btn{
+
+        visibility: hidden;
+    }
+  }
+  @media(min-width:800px){
+      .weight_choose_goal{
+          width: 700px;
+      }
+  }
