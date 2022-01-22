@@ -12,6 +12,7 @@ import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 
 function App() {
+
 	return (
 		<div className="App">
 			<Navbar />
