@@ -60,11 +60,13 @@
   margin-bottom: 20px;
 }
 #home_body_2 {
+ 
   background-image: url("../../public/Images/homepage/hero-collage-search-bottom-large@2x.png");
   background-size: 100%;
   height: 345px;
 }
-#home_input_box {
+#home_input_search_box {
+  
   width: 60%;
   margin: 20px 20%;
   height: 80px;
@@ -74,7 +76,7 @@
   font-size: 20px;
   padding-left: 50px;
 }
-#search_button {
+#home_body_2 button {
   margin-left: -23%;
   color: #0066ee;
   font-size: 24px;

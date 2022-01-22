@@ -8,7 +8,7 @@ export const Navbar = () => {
            <Link id="logo" to="/"><h1 >myfitnesspal</h1>  </Link> 
          <div id="loginSignupLink">
          <Link to="/login">Log In</Link>
-         <Link to="/signup">Sign Up</Link>
+         <Link to="/signup/welcome">Sign Up</Link>
             </div>
             </div>
             <div id="navbar-lower">
