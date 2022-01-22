@@ -1,7 +1,16 @@
 import "./Homepage.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export const HomePage = () => {
+  const [text,setText] = useState("");
+
+  const navigate = useNavigate();
+
+ const getData = () => {
+   console.log(text)
+ }
+
   return (
     <div>
       <div id="home_top_div">
@@ -33,12 +42,17 @@ export const HomePage = () => {
       <div id="home_body_2">
         <input
           id="home_input_box"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
           type="text"
           placeholder="Get the nutrition for any food, like an apple"
         />
-        <button>
-          <i class="fas fa-search"></i>
+       <Link to={`/food/${text}`}>
+       <button id="search_button">
+          <i className="fas fa-search"></i>
         </button>
+         </Link>
+       
       </div>
       <div id="home_body_3">
         <div id="home_body_3_sec1">

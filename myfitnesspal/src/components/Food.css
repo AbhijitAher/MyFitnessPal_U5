@@ -1,0 +1,12 @@
+#food_container{
+    border: 1px solid red;
+    width: 50%;
+    margin:30px 18%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#noDataImg{
+ width: 70%;
+ margin:auto;
+}
