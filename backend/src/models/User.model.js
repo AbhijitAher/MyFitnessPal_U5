@@ -3,15 +3,16 @@ const bcrypt = require("bcrypt");
 
 const userSchema = new Schema(
 	{
-		goal: { type: String, required: true },
-		activity_level: { type: String, required: true },
-		gender: { type: String, required: true },
-		birth_date: { type: String, required: true },
-		country: { type: String, required: true },
-		zip_code: { type: Number, required: true },
-		height: { type: Number, required: true },
-		weight: { type: Number, required: true },
-		goal_weight: { type: Number, required: true },
+		// goal: { type: String, required: true },
+		// activity_level: { type: String, required: true },
+		// gender: { type: String, required: true },
+		// birth_date: { type: String, required: true },
+		// country: { type: String, required: true },
+		// zip_code: { type: Number, required: true },
+		// height: { type: Number, required: true },
+		// weight: { type: Number, required: true },
+		// goal_weight: { type: Number, required: true },
+		email: { type: String, required: true },
 		password: { type: String, required: true },
 	},
 	{
