@@ -153,10 +153,15 @@
   margin-bottom: 20px;
 }
 #home_corousel {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 350px;
   margin-bottom: 10px;
 }
+.home_corousel_sec_1{
+  border: 1px solid green;
+  overflow: hidden;
+}
+
 #home_corousel img {
     width: 90%;
 }

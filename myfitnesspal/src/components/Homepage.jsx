@@ -1,10 +1,16 @@
 import "./Homepage.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const HomePage = () => {
-  const [text,setText] = useState("");
+  const [text, setText] = useState("");
+  const [index,setIndex] = useState(0);
 
+  const image = ["https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_1.jpg?raw=true",
+"https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_2.jpg?raw=true",
+"https://github.com/AbhijitAher/MyFitnessPal_U5/blob/main/myfitnesspal/public/Images/homepage/corousel_3.jpg?raw=true"] 
+   
+  useEffect(() => {});
 
   return (
     <div>
@@ -35,7 +41,6 @@ export const HomePage = () => {
         </div>
       </div>
       <div id="home_body_2">
-
         <input
           id="home_input_search_box"
           value={text}
@@ -44,12 +49,11 @@ export const HomePage = () => {
           placeholder="Get the nutrition for any food, like an apple"
         />
 
-       <Link to={`/food/${text}`}>
-       <button id="search_button">
-          <i className="fas fa-search"></i>
-        </button>
-         </Link>
-       
+        <Link to={`/food/${text}`}>
+          <button id="search_button">
+            <i className="fas fa-search"></i>
+          </button>
+        </Link>
       </div>
       <div id="home_body_3">
         <div id="home_body_3_sec1">
@@ -109,7 +113,39 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="home_corousel">
-          <img src="./Images/homepage/corousel_1.jpg" alt="" />
+          {/* ---------------------------------------------------------------- */}
+
+          <div className="home_corousel_sec_1">
+            <div
+              className="whitespace-nowrap transition ease-linear duration-1000"
+              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+            >
+              {image.map((e, i) => (
+                <img
+                  className="w-full inline-block"
+                  src={e}
+                  key={i}
+                  alt="img"
+                />
+              ))}
+            </div>
+
+            <div className="slideshowDots text-center absolute bottom-0 left-1/2 ">
+              {image.map((_, id) => (
+                <div
+                  key={id}
+                  className={
+                    index === id ? "slideshowDotActive" : "slideshowDot"
+                  }
+                  onClick={() => {
+                    setIndex(id);
+                  }}
+                ></div>
+              ))}
+            </div>
+          </div>
+
+          {/* --------------------------------------------------------------------------------         */}
         </div>
       </div>
       <div id="home_body_5">
