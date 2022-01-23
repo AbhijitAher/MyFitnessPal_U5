@@ -11,6 +11,7 @@ import { Detail } from "./components/signup/detailspage";
 import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 import { AllApps } from "./components/allApps/AllApps";
+import { Goals } from "./components/goals/Goals";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/food" element={<Food />}></Route>
+				<Route path="/goals" element={<Goals />}></Route>
 				<Route path="/apps" element={<AllApps />}></Route>
 
         		<Route path="/food/:name" element={<Food/>}></Route>
