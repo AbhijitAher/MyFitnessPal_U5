@@ -1,18 +1,12 @@
 # **[MyFitnessPal]()** 
----
 # Welcome :wave:
----
 
 ### About this project: :raised_hands:
 
 > This is a team project, built by us in the Construct Week - Unit 5 at Masai School.
 
----
-
 #### Presentation Video: 
-- **[Checkout The Demo Video On LinkedIn](#)**
-
----
+- **[Checkout The Demo Video On LinkedIn]()**
 
 #### Project Demo: 
 - **[Checkout The Live Project Demo]()**
