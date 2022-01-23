@@ -7,9 +7,14 @@ export const Premium = () => {
 				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/Image1.JPG"
 				alt=""
 			/>
-            <img
+			<img
 				className="Img2"
-				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/Image2.JPG"
+				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/Image2.jpg"
+				alt=""
+			/>
+			<img
+				className="Img3"
+				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image3.jpg"
 				alt=""
 			/>
 		</div>
