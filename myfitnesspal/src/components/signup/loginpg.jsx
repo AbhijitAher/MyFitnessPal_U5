@@ -1,16 +1,21 @@
 import "./welcome.css"
-import "./createform.css";
+import "./login.css";
 import { useState, useMemo } from "react";
+
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import { useNavigate,Link } from "react-router-dom";
 export const Login = () => {
+	const navigate= useNavigate();
 	const [data, setData] = useState([]);
 	const [value, setValue] = useState("");
 	const options = useMemo(() => countryList().getData(), []);
 
     const handleSubmit = (e) => {
 	e.preventDefault();
-	
+	alert("Login Successful , Welcome !!")
+	navigate("/goals")
+
 	};
 	const handleChange = (e) => {
 		let d = e.target.value;
@@ -22,7 +27,7 @@ export const Login = () => {
 			<div className="nav_container">
 				<div className="nav">
 					<div className="btn1">
-						<button className="myfit">myfitnesspal</button>
+					<Link to={"/"}>	<button className="myfit">myfitnesspal</button></Link>
 					</div>
 				</div>
 			</div>
@@ -30,7 +35,7 @@ export const Login = () => {
 				<div className="form_container">
 					<div className="form_container_bottom_div">
                         
-						<form onClick={handleSubmit} className="createform">
+						<form onSubmit={handleSubmit} className="createform">
                         <p className="form_heading">Member Login Page</p>
                             <div className="input_div1">
                             <input className="form_input" type="email" placeholder=" Email address" onChange={handleChange}/>

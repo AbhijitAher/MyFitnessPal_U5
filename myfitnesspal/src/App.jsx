@@ -10,13 +10,13 @@ import { Welcome } from "./components/signup/welcome";
 import { LooseWeight } from "./components/signup/weightgoal";
 import { BaselineActivity } from "./components/signup/activitylevelpage";
 import { Detail } from "./components/signup/detailspage";
-import { BodyScan } from "./components/signup/bodyscanpg";
+import { BodyCheckout } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 import { AllApps } from "./components/allApps/AllApps";
 import { Goals } from "./components/goals/Goals";
- import { CreateAccount } from "./components/signup/createaccount_pg";
+ import { CreateAccount } from "./components/signup/createaccountpg";
  import { Login } from "./components/signup/loginpg";
- import { CreateUsername } from "./components/signup/create_usernamepg";
+ import { CreateUsername } from "./components/signup/createusernamepg";
 
 import { Premium } from "./components/premium/Premium";
 
@@ -34,6 +34,8 @@ function App() {
 				<Route path="/goals" element={<Goals />}></Route>
 				<Route path="/apps" element={<AllApps />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
+		<Route path="/premium" element={<Premium />}></Route>
+		<Route path="/login" element={<Login />}></Route>
 
 				{/* Signup Page 1 */}
 				 <Route path="/signup/welcome" element={<Welcome />}></Route> 
