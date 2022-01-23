@@ -1,18 +1,17 @@
-const GoogleStrategy = require("passport-google-oauth2").Strategy;
-const passport = require("passport");
 require("dotenv").config(); // has Google client id and secret
-const { uuid } = require("uuidv4");
+const passport = require("passport");
+const GoogleStrategy = require("passport-google-oauth2").Strategy;
+const { v4 } = require("uuidv4");
 
 const User = require("../models/user.model");
-
-const { newToken } = require("../controllers/auth.controller"); // *
+const { newToken } = require("../controllers/auth.controller");
 
 passport.use(
 	new GoogleStrategy(
 		{
 			clientID: process.env.GOOGLE_CLIENT_ID,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-			callbackURL: "http://localhost:2626/auth/google/callback",
+			callbackURL: `http://localhost:${process.env.PORT}/auth/google/callback`,
 			userProfileURL: "https://**www**.googleapis.com/oauth2/v3/userinfo",
 			passReqToCallback: true,
 		},
@@ -27,7 +26,7 @@ passport.use(
 			if (!user) {
 				user = await User.create({
 					email: profile?._json.email,
-					password: uuid(),
+					password: v4(),
 				});
 			}
 			const token = newToken(user);
