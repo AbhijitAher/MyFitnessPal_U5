@@ -10,6 +10,7 @@ import { BaselineActivity } from "./components/signup/activitylevelpage";
 import { Detail } from "./components/signup/detailspage";
 import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
+import { AllApps } from "./components/allApps/AllApps";
 
 function App() {
 
@@ -19,13 +20,16 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/food" element={<Food />}></Route>
-        <Route path="/food/:name" element={<Food/>}></Route>
+				<Route path="/apps" element={<AllApps />}></Route>
+
+        		<Route path="/food/:name" element={<Food/>}></Route>
 
 				{/* Signup Page 1 */}
 				<Route path="/signup/welcome" element={<Welcome />}></Route>
 
 				{/* Signup Page 2 */}
 				<Route path="/signup/weightgoal" element={<LooseWeight />}></Route>
+
 
 				{/* Signup Page 3 */}
 				<Route
