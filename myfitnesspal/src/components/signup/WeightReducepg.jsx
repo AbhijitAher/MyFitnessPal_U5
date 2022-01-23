@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./welcome.css";
 import "./WeightReduce.css";
 
 import "./bodyscanpg.jsx";
-import "./createaccount_pg.jsx";
+import "./createaccountpg.jsx";
 import {Link,Routes,Route} from "react-router-dom";
 
 export const WeightReduce = () => {
-	const [text, setText] = React.useState("");
+	const [text, setText] = useState("");
 	return (
 		<div>
 			<div className="nav_container">
