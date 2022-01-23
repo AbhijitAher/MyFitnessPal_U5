@@ -4,6 +4,7 @@ const passport = require("./configs/passport");
 
 const userController = require("./controllers/user.controller");
 const foodController = require("./controllers/food.controller");
+const appController = require("./controllers/app.controller");
 
 const app = express();
 
