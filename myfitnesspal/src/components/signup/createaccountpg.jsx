@@ -1,5 +1,8 @@
 import "./welcome.css"
 import "./createaccount.css";
+import "./create_usernamepg.jsx";
+import "./loginpg.jsx";
+import { Link,Routes,Route } from "react-router-dom";
 import { useState, useMemo } from "react";
 
 export const CreateAccount = () => {
@@ -36,9 +39,12 @@ export const CreateAccount = () => {
                             <div className="btn_div1_c1"> 
                             <p className="input_bottom_text1_c1">By signing up for MyFitnessPal, you are agreeing to our <a href="#">Privacy Policy</a> and <a href="#">Terms.</a></p>
 							<div className="btn_div1_bottom_c1" >
-                                <button className="continue_btn_c1">Continue</button>
+							<Link className="continue_btn_c1" style={{textDecoration:"none"}} to="/signup/createusername">Continue</Link>
+							<p style={{textAlign:"center",}}>OR</p>
+						         <Link className="continue_btn_c1" style={{textDecoration:"none"}} to="/signup/login">Google</Link>
+                                {/* <button className="continue_btn_c1">Continue</button>
 								             <p style={{textAlign:"center",}}>OR</p>
-								<button className="continue_btn_c1">Google</button>
+								<button className="continue_btn_c1">Google</button> */}
                                 </div>
 								</div>
                              

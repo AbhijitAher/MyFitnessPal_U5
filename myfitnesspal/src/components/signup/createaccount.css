@@ -109,6 +109,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    text-align: center;
 }
 .input_bottom_text1_c1{
     font-size: 13px;

@@ -81,7 +81,7 @@
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     cursor: pointer;
 }
-input:checked + .weight_type_label {
+.weight_goal_input:checked + .weight_type_label {
     color: rgb(0, 102, 238);
     font-weight: 600;
 }

@@ -1,5 +1,8 @@
 import "./welcome.css";
 import "./detail.css";
+import  "./activitylevelpage.jsx"
+import  "./bodyscanpg.jsx"
+import { Link,Routes,Route } from "react-router-dom";
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
@@ -66,6 +69,7 @@ export const Detail = () => {
 											className="textbox"
 											options={options}
 											value={value}
+											
 											placeholder="country"
 											size="lg"
 											onChange={changeHandler}
@@ -90,8 +94,11 @@ export const Detail = () => {
 								</p>
 
 								<div className="bottom_div">
-									<button className="BN btn1_back">Back</button>
-									<button className="BN btn2_next">Next</button>
+								<Link className="BN btn1_back" style={{textDecoration:"none"}} to="/signup/activitylevel">Back</Link>
+						         <Link className="BN btn2_next" style={{textDecoration:"none"}} to="/signup/checkout">Next</Link>
+						
+									{/* <button className="BN btn1_back">Back</button>
+									<button className="BN btn2_next">Next</button> */}
 								</div>
 							</li>
 						</ul>

@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import "./welcome.css";
 import "./WeightReduce.css";
+import "./bodyscanpg.jsx";
+import "./createaccount_pg.jsx";
+import {Link,Routes,Route} from "react-router-dom";
 export const WeightReduce = () => {
 	const [text, setText] = React.useState("");
 	return (
@@ -74,8 +77,10 @@ export const WeightReduce = () => {
 							</li>
 						</ul>
 						<div className="button_footer">
-							<button className="button_bn back_btn">Back</button>
-							<button className="button_bn next_btn">Next</button>
+						<Link className="button_bn back_btn" style={{textDecoration:"none"}} to="/signup/checkout">Back</Link>
+						         <Link className="button_bn next_btn" style={{textDecoration:"none"}} to="/signup/createaccount">Next</Link>
+							{/* <button className="button_bn back_btn">Back</button>
+							<button className="button_bn next_btn">Next</button> */}
 						</div>
 					</div>
 				</div>
@@ -83,4 +88,3 @@ export const WeightReduce = () => {
 		</div>
 	);
 };
-  

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./welcome.css";
 import "./weightgoal.css";
+import "./welcome.jsx";
+import "./activitylevelpage.jsx";
+import { Link, Router, BrowserRouter } from 'react-router-dom'
 export const LooseWeight = () => {
 	const [text, setText] = React.useState("");
 
@@ -58,8 +61,11 @@ export const LooseWeight = () => {
 							</li>
 						</ul>
 						<div className="btn_footer_div_main">
-							<button className="btn_bn_same back_btn_same">Back</button>
-							<button className="btn_bn_same next_btn_same">Next</button>
+						<Link className="btn_bn_same back_btn_same" style={{textDecoration:"none"}} to="/signup/welcome">Back</Link>
+						<Link className="btn_bn_same next_btn_same" style={{textDecoration:"none"}} to="/signup/activitylevel">Next</Link>
+						
+							{/* <button className="btn_bn_same back_btn_same">Back</button>
+							<button className="btn_bn_same next_btn_same">Next</button> */}
 						</div>
 					</div>
 				</div>

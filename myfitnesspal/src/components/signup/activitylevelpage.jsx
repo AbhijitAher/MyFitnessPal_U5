@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./welcome.css";
 import "./activitylevel.css";
+import "./weightgoal.jsx";
+import "./detailspage.jsx";
+import { Link, Router, BrowserRouter } from 'react-router-dom'
 export const BaselineActivity = () => {
 	const [text, setText] = React.useState("");
 	return (
@@ -109,8 +112,11 @@ export const BaselineActivity = () => {
 							</li >
 							<li className="li2">
 							<div className="btn_footer_div3">
-							<button className="btn_bn21 back_btn12">Back</button>
-							<button className="btn_bn21 next_btn12">Next</button>
+							<Link className="btn_bn21 back_btn12" style={{textDecoration:"none"}} to="/signup/weightgoal">Back</Link>
+						<Link className="btn_bn21 next_btn12" style={{textDecoration:"none"}} to="/signup/details">Next</Link>
+						
+							{/* <button className="btn_bn21 back_btn12">Back</button>
+							<button className="btn_bn21 next_btn12">Next</button> */}
 							
 						</div>
 						</li>

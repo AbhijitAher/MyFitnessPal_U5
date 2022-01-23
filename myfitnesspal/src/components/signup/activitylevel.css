@@ -69,7 +69,7 @@
     padding-bottom: 30px;
 }
 
-input {
+.activity_level_type_input {
     visibility:hidden;
 }
 .main_para_head{
@@ -130,9 +130,10 @@ outline-color: rgb(0, 102, 238) ;
 }
 .btn_bn21{
     border: 2px solid rgb(0, 102, 238);
-
+    text-align: center;
     width: 48%;
     height: 50px;
+   padding-top: 7px;
     border-radius: 4px;
    
     letter-spacing: 0.015625rem;

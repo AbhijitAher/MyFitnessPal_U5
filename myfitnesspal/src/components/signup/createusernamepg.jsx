@@ -1,5 +1,8 @@
 import "./welcome.css"
 import "./create_username.css";
+import "./createaccount_pg.jsx"
+import "../Homepage";
+import { Link,Routes,Route } from "react-router-dom";
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
@@ -38,10 +41,12 @@ export const CreateUsername = () => {
                            
                             </div>
                            
-                           
+                           {/* <button className="btn_BN_a2 btn_back_b1">Back</button>
+								<button className="btn_BN_a2 btn_next_n1">Finish</button> */}
                                 <div className="footer_div32">
-								<button className="btn_BN_a2 btn_back_b1">Back</button>
-								<button className="btn_BN_a2 btn_next_n1">Finish</button>
+								<Link className="btn_BN_a2 btn_back_b1" style={{textDecoration:"none"}} to="/signup/createaccount">Back</Link>
+						         <Link className="btn_BN_a2 btn_next_n1" style={{textDecoration:"none"}} to="/">Finish</Link>
+								
 							</div>
                         </form>
 								
