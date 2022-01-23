@@ -6,16 +6,9 @@ const router = express.Router();
 
 router.post("/",async (req, res) => {
   try {
-    const food = await Food.create({
-      name: req.body.name,
-      calories: req.body.calories,
-      carbs: req.body.carbs,
-      fat: req.body.fat,
-      protein: req.body.protein,
-    });
-
+    const food = await Food.create(req.body);
     console.log(food);
-    return res.status(201).send(food);
+    return res.status(201).send({food});
   } catch (e) {
     return res.status(500).json({ status: "failed", message: e.message });
   }
@@ -26,7 +19,7 @@ router.get("/", async (req, res) => {
     const foods = await Food.find().lean().exec();
 
     console.log(foods);
-    return res.status(201).send(foods);
+    return res.status(201).send({foods});
   } catch (e) {
     return res.status(500).json({ status: "failed", message: e.message });
   }
