@@ -12,9 +12,9 @@ export const Navbar = () => {
             </div>
             </div>
             <div id="navbar-lower">
-            <Link to="/about">ABOUT</Link>
+            <Link to="/">ABOUT</Link>
             <Link to="/food">FOOD</Link>
-            <Link to="/exercise">EXERCISE</Link>
+            <Link to="/">EXERCISE</Link>
             <Link to="/apps">APPS</Link>
             <Link to="">COMMUNITY</Link>
             <Link to="">BLOG</Link>
