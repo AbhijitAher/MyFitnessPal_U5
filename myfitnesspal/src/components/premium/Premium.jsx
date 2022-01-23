@@ -1,7 +1,7 @@
 import "./Premium.css";
 export const Premium = () => {
 	return (
-		<div>
+		<div className="div1">
 			<img
 				className="Img1"
 				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/Image1.JPG"
@@ -17,6 +17,21 @@ export const Premium = () => {
 				src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image3.jpg"
 				alt=""
 			/>
+			<div className="div2">
+				<img
+					className="Img4"
+					src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image4.jpg"
+					alt=""
+					onClick={() => {}}
+				/>
+
+				<img
+					className="Img5"
+					src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image5.jpg"
+					alt=""
+					onClick={() => {}}
+				/>
+			</div>
 		</div>
 	);
 };
