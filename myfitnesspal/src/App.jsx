@@ -12,7 +12,6 @@ import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 import { AllApps } from "./components/allApps/AllApps";
 import { Premium } from "./components/premium/Premium";
-import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
 	return (
