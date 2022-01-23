@@ -7,5 +7,5 @@ const port = process.env.PORT;
 
 app.listen(port, async () => {
 	await connect();
-    console.log("The Server is Live");
+	console.log("The Server is Live on 2626");
 });
