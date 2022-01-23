@@ -1,10 +1,36 @@
 .Img1 {
 	width: 100%;
-
 }
 
 .Img2 {
 	width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.Img3 {
+	width: 40%;
+	margin-top: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.div2 {
+	margin-top: 20px;
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.Img4 {
+	width: 30%;
+	cursor: pointer;
+}
+
+.Img5 {
+	width: 30%;
+	padding: 43px;
+	cursor: pointer;
 }
