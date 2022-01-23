@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import { Food } from "./components/Food";
+import {Payment} from "./components/Payment"
 import { Welcome } from "./components/signup/welcome";
 import { LooseWeight } from "./components/signup/weightgoal";
 import { BaselineActivity } from "./components/signup/activitylevelpage";
@@ -19,8 +20,10 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/food" element={<Food />}></Route>
-        <Route path="/food/:name" element={<Food/>}></Route>
+                <Route path="/food/:name" element={<Food/>}></Route>
 
+				<Route path="/payment" element={<Payment />}></Route>
+ 
 				{/* Signup Page 1 */}
 				<Route path="/signup/welcome" element={<Welcome />}></Route>
 
