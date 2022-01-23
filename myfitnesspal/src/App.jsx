@@ -12,7 +12,10 @@ import { Detail } from "./components/signup/detailspage";
 import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 import { AllApps } from "./components/allApps/AllApps";
+import { Goals } from "./components/goals/Goals";
+
 import { Premium } from "./components/premium/Premium";
+
 
 function App() {
 	return (
@@ -23,7 +26,9 @@ function App() {
 				<Route path="/food" element={<Food />}></Route>
         <Route path="/food/:name" element={<Food/>}></Route>
 
+				<Route path="/goals" element={<Goals />}></Route>
 				<Route path="/apps" element={<AllApps />}></Route>
+
 
 				<Route path="/payment" element={<Payment />}></Route>
  

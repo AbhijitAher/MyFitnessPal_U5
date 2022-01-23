@@ -19,6 +19,7 @@ export const Navbar = () => {
             <Link to="">COMMUNITY</Link>
             <Link to="">BLOG</Link>
             <Link to="/premium">PREMIUM</Link>
+            <Link to="/goals">GOALS</Link>
             </div>
          
     </div>
