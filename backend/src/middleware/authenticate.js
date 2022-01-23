@@ -18,7 +18,16 @@ module.exports = (req, res, next) => {
 
 	// else we will try to get the user from token
 	const token = bearerToken.split(" ")[1];
-	const user = verifyToken(token);
+
+	let user;
+	try {
+		user = verifyToken(token);
+	} catch (e) {
+		return res.status(400).json({
+			status: "failed",
+			message: "Please provide a valid token",
+		});
+	}
 
 	// if no user found then we will throw an error
 	if (!user) {
