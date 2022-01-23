@@ -1,0 +1,106 @@
+#payment_div_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#payment_div_main_sec1 {
+  width: 40%;
+  
+}
+#payment_div_main_sec1_1 {
+
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#payment_div_main_sec1_1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.small_input_box {
+  width: 26%;
+  margin-right: 6%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 3px;
+  height: 50px;
+}
+.big_input_box {
+  width: 90%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 3px;
+  height: 50px;
+}
+.payment_Submit_btn {
+  padding: 20px 30px;
+  width: 50%;
+  color: white;
+  font-weight: 600;
+  background-color: #0066ee;
+  border: none;
+
+  font-size: 16px;
+  border-radius: 5px;
+}
+.payment_Submit_btn:hover {
+  background-color: #1943cf;
+}
+.TermsAndConditions_div{
+    margin-top:50px;
+    width: 90%;
+    font-size:13px;
+    color: rgb(148, 148, 148);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.TermsAndConditions_div a {
+color: #0066ee;
+text-decoration: none;
+}
+#payment_div_main_sec1_1 h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+}
+#payment_div_main_sec2 {
+  width: 40%;
+}
+#payment_div_main_sec2_1 {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#payment_div_main_sec2_1 h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+}
+#payment_div_main_sec2_1 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+}
+#promocode_applied {
+  color: #0066ee;
+}
+#due_div {
+  border-top: 1px solid black;
+  padding: 5px;
+}
+#renew_div {
+  border: 1px solid #c0e4f8;
+  background-color: #f2f9fd;
+  padding: 8px;
+  font-size: 16px;
+}

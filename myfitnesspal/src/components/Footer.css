@@ -1,0 +1,16 @@
+#Footer {
+    height: 130px;
+    background-color: #EFEFEF; 
+    text-align: center; 
+    padding: 30px;
+}
+#Footer p {
+    font-size:12px;
+    margin-top:30px;
+}
+#footer_links a{
+text-decoration: none;
+margin-right: 10px;
+color:#0066EE;
+font-size:13px;
+}

@@ -1,0 +1,128 @@
+#food_container {
+  /* border: 1px solid red; */
+  width: 50%;
+  margin: 30px 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#food_Search {
+  width: 90%;
+  height: 55px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 50px;
+  border-top: 1px solid rgb(236, 235, 235);
+  border-left: 1px solid rgb(236, 235, 235);
+  border-right: 1px solid rgb(221, 220, 220);
+  border-bottom: 2px solid rgb(221, 220, 220);
+  transition: 0.5s;
+}
+#food_Search::placeholder {
+  color: rgb(190, 190, 190);
+}
+#food_Search:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#foodSearchBtn {
+  width: 30px;
+  border: none;
+  background-color: white;
+  color: blue;
+  margin-top: -58px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+#food_body_1 {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  justify-content: space-between;
+}
+#food_body_1 a img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#food_body_1 a {
+  text-decoration: none;
+}
+#food_body_1 a div {
+  border-left: 1px solid rgb(223, 223, 223);
+  border-right: 1px solid rgb(223, 223, 223);
+  border-bottom: 1px solid rgb(223, 223, 223);
+
+  border-radius: 10px;
+}
+#noDataDiv{
+  text-align: center;  
+  }
+  #noDataDiv h5 {
+    font-size:22px;
+    margin-bottom: 20px;
+  }
+  #noDataDiv p {
+    width: 60%;
+    margin:auto;
+  }
+  #noDataImg {
+    width: 70%;
+    margin: auto;
+  }
+  
+  #dataDiv{
+  display: none;
+  }
+  #no_food_search_data_div{
+    display: none;
+  }
+  #food_search_data_div{
+   width: 90%; 
+  display:flex;
+  flex-direction: column;
+  }
+  .food_search_result_div{
+    padding: 10px;
+    border-bottom: 2px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .food_search_result_div h5{
+    color: #0066ee;
+    font-size:16px;
+    font-weight:500;
+    margin-bottom: 20px;
+  }
+  
+  .food_search_result_div_sec_1 div {
+    display: flex;
+    gap: 20px;
+  }
+  .food_search_result_div_sec_1 div p{
+font-size: 14px;
+  }
+  .food_search_result_div_sec_1 div div {
+    display: flex;
+    gap: 20px;
+  }
+  .food_search_result_div_sec_1 div div li {
+    font-size: 14px;
+  }
+  .calories_circle{
+    border-left: 3px solid #0ABFC8;
+    border-right: 3px solid #0ABFC8;
+    border-bottom: 3px solid #0ABFC8;
+    border-top: 3px solid rgb(228, 127, 127);
+    width: 55px;
+    height:55px;
+    border-radius:27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:17px;
+    font-weight:600;
+  }

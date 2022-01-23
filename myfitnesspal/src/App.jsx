@@ -1,26 +1,39 @@
 import "./App.css";
- import { HomePage } from "./components/Homepage";
- import { Navbar } from "./components/Navbar";
- import { Footer } from "./components/Footer";
- import { Routes, Route } from "react-router-dom";
- import { Food } from "./components/Food";
- import { Welcome } from "./components/signup/welcome";
+
+import { HomePage } from "./components/Homepage";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import { Food } from "./components/Food";
+import {Payment} from "./components/Payment"
+import { Welcome } from "./components/signup/welcome";
 import { LooseWeight } from "./components/signup/weightgoal";
- import { BaselineActivity } from "./components/signup/activitylevelpage";
- import { Detail } from "./components/signup/detailspage";
- import { BodyCheckout } from "./components/signup/bodyscanpg";
- import { WeightReduce } from "./components/signup/WeightReducepg";
+import { BaselineActivity } from "./components/signup/activitylevelpage";
+import { Detail } from "./components/signup/detailspage";
+import { BodyScan } from "./components/signup/bodyscanpg";
+import { WeightReduce } from "./components/signup/WeightReducepg";
+import { AllApps } from "./components/allApps/AllApps";
+import { Goals } from "./components/goals/Goals";
  import { CreateAccount } from "./components/signup/createaccount_pg";
  import { Login } from "./components/signup/loginpg";
  import { CreateUsername } from "./components/signup/create_usernamepg";
+
+import { Premium } from "./components/premium/Premium";
+
 
 function App() {
 	return (
 		<div className="App">
 			<Navbar />
 			<Routes>
-				 <Route path="/" element={<HomePage />}></Route>
-				<Route path="/food" element={<Food />}></Route> 
+
+					<Route path="/" element={<HomePage />}></Route>
+				  <Route path="/food" element={<Food />}></Route>
+          <Route path="/food/:name" element={<Food/>}></Route>
+
+				<Route path="/goals" element={<Goals />}></Route>
+				<Route path="/apps" element={<AllApps />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
 
 				{/* Signup Page 1 */}
 				 <Route path="/signup/welcome" element={<Welcome />}></Route> 
@@ -52,7 +65,8 @@ function App() {
 				{/* signup page 9 */}
 				 <Route path="/signup/createusername" element={<CreateUsername />}></Route>
 				</Routes>  
-			{/* <Footer /> */}
+			<Footer />
+			
 		</div>
 	);
 }

@@ -41,9 +41,11 @@
     margin:50px auto;
 }
 
+
 .ul1 {
     width: 100%;
     
+
     list-style: none;
     display:flex;
     flex-direction:column;
@@ -54,22 +56,26 @@
 .li1 {
     width: 100%;
    
+
 }
  .weight_type_choose{
     width:90%;
    height: 50px;
   
+
     border: 2px solid rgb(222, 225, 231);
     color: rgb(34, 38, 40);
     text-transform: none;
     border-radius: 4px;
    
     background-color: rgb(255, 255, 255);
+
    
     
 } 
 .weight_goal_input {
     margin-top: 15px;
+
     visibility:hidden;
 }
 .weight_type_label {
@@ -83,8 +89,10 @@
 }
 .weight_goal_input:checked + .weight_type_label {
     color: rgb(0, 102, 238);
+
     font-weight: 600;
 }
+
 .weight_type.Mui-selected{
     border: rgb(0, 102, 238);
 }

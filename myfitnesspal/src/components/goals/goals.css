@@ -1,0 +1,71 @@
+.goals {
+  width: 70%;
+  margin: auto;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  margin: 2% 0%;
+  text-align: start;
+  color: #0a5282;
+}
+
+.desc {
+  margin: 2% 0%;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.desc > a {
+  color: #0072bc;
+  text-decoration: none;
+}
+
+.desc > a:hover {
+  color: orangered;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 2%;
+}
+
+
+.table{
+    margin: 5% 0px;
+}
+
+.table > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  border: 1px solid grey;
+  background-color: #f6f6f6;
+  color: #222222;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.table > div:nth-child(1) {
+  color: white;
+  background-color: #035184;
+}
+
+.row>button{
+    background-color: #51a351;
+    color: white;
+    padding: 5px;
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgb(210, 210, 210) 0px 1px 3px 0px inset;
+}
+
+.row>p:nth-child(2){
+    font-weight:500 ;
+}

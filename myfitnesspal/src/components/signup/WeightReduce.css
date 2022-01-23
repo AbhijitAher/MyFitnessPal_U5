@@ -95,14 +95,16 @@
 .weightsel_type:hover{
     outline:2px solid rgb(0, 102, 238);
 }
+
 .weightsel_type_input{
+
     visibility:hidden;
 }
 input:checked + label {
     color: rgb(0, 102, 238);
     font-weight: 600;
     
-}
+} */
 
 .button_footer{
     display: flex;

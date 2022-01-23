@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./welcome.css";
 import "./activitylevel.css";
+
 import "./weightgoal.jsx";
 import "./detailspage.jsx";
 import { Link, Router, BrowserRouter } from 'react-router-dom'
+
 export const BaselineActivity = () => {
 	const [text, setText] = React.useState("");
 	return (
@@ -15,6 +17,7 @@ export const BaselineActivity = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="nav2_bottom_div">
 				<div className="user_activity">
 					
@@ -27,16 +30,19 @@ export const BaselineActivity = () => {
 							<li className="li2">
 								<div className="activity_level_type">
 									<input className="activity_level_type_input"
+
 										type="radio"
 										value="1"
 										name="radio"
 										id="radio1"
 										onChange={(e) => setText(e.target.value)}
 									/>
+
 									<label className="activity_input_label" for="radio1">
 										<p className="spanpara">
 											<span>
 												<strong style={{fontSize:"18px",fontWeight:"600"}}>Not Very Active</strong>
+
 											</span>
 											<br />
 											spend most of the day in sitting (e.g., Bankteller,
@@ -45,19 +51,23 @@ export const BaselineActivity = () => {
 									</label>
 								</div>
 							</li>
+
 							<li className="li2">
 								<div className="activity_level_type">
 									<input className="activity_level_type_input"
+
 										type="radio"
 										value="2"
 										name="radio"
 										id="radio2"
 										onChange={(e) => setText(e.target.value)}
 									/>
+
 									<label className="activity_input_label" for="radio2">
 										<p className="spanpara">
 											<span>
 												<strong style={{fontSize:"18px",fontWeight:"600",}}>Lightly Active</strong>
+
 											</span>
 											<br />
 											spend a good part of day on your feet (e.g., Teacher,
@@ -66,20 +76,24 @@ export const BaselineActivity = () => {
 									</label>
 								</div>
 							</li>
+
 							<li className="li2">
 								<div className="activity_level_type">
 									<input className="activity_level_type_input"
+
 										type="radio"
 										value="3"
 										name="radio"
 										id="radio3"
 										onChange={(e) => setText(e.target.value)}
 									/>
+
 									<label className="activity_input_label" for="radio3">
 										{" "}
 										<p className="spanpara">
 											<span>
 												<strong style={{fontSize:"18px",fontWeight:"600"}}> Active</strong>
+
 											</span>
 											<br />
 											spend a good part of the day doing some physical activity
@@ -88,20 +102,24 @@ export const BaselineActivity = () => {
 									</label>
 								</div>
 							</li>
+
 							<li className="li2">
 								<div className="activity_level_type">
 									<input className="activity_level_type_input"
+
 										type="radio"
 										value="4"
 										name="radio"
 										id="radio4"
 										onChange={(e) => setText(e.target.value)}
 									/>
+
 									<label className="activity_input_label" for="radio4">
 										{" "}
 										<p className="spanpara">
 											<span>
 												<strong style={{fontSize:"18px",fontWeight:"600"}}>Very Active</strong>
+
 											</span>
 											<br />
 											spend a good part of the day doing heavy physical activity
@@ -109,6 +127,7 @@ export const BaselineActivity = () => {
 										</p>
 									</label>
 								</div>
+
 							</li >
 							<li className="li2">
 							<div className="btn_footer_div3">
@@ -122,6 +141,7 @@ export const BaselineActivity = () => {
 						</li>
 						</ul>
 						
+
 					</div>
 				</div>
 			</div>

@@ -1,10 +1,12 @@
 import "./welcome.css";
 import "./bodyscan.css";
+
 import "./detailspage.jsx"
 import "./WeightReducepg.jsx";
 import { Link,Routes,Route } from "react-router-dom";
 import { useState } from "react";
 export const BodyCheckout = () => {
+
 	const [data, setData] = useState([]);
 
 	const handleChange = (e) => {
@@ -20,7 +22,9 @@ export const BodyCheckout = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="nav_bottom_container1">
+
 				<div className="input_container">
 					<div className="user_detail">
 						<ul className="u_l">
@@ -69,10 +73,12 @@ export const BodyCheckout = () => {
 								</div>
 							</li>
 							<div className="footer_div">
+
 							<Link className="btn_BN btn_back" style={{textDecoration:"none"}} to="/signup/details">Back</Link>
 						         <Link className="btn_BN btn_next" style={{textDecoration:"none"}} to="/signup/weeklygoal">Next</Link>
 								{/* <button className="btn_BN btn_back">Back</button>
 								<button className="btn_BN btn_next">Next</button> */}
+
 							</div>
 						</ul>
 					</div>
@@ -80,4 +86,6 @@ export const BodyCheckout = () => {
 			</div>
 		</div>
 	);
+
 };
+
