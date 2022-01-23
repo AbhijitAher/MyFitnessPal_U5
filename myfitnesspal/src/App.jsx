@@ -15,7 +15,6 @@ import { AllApps } from "./components/allApps/AllApps";
 import { Goals } from "./components/goals/Goals";
 
 import { Premium } from "./components/premium/Premium";
-import { ChakraProvider } from "@chakra-ui/react";
 
 
 function App() {
