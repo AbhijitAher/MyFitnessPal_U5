@@ -1,7 +1,5 @@
 # **[MyFitnessPal]()** 
 ---
-
----
 # Welcome :wave:
 ---
 
