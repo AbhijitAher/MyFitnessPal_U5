@@ -1,4 +1,5 @@
 import "./Premium.css";
+import {Link} from "react-router-dom"
 export const Premium = () => {
 	return (
 		<div className="div1">
@@ -18,13 +19,13 @@ export const Premium = () => {
 				alt=""
 			/>
 			<div className="div2">
+				<Link to={"/payment"}>
 				<img
 					className="Img4"
 					src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image4.jpg"
 					alt=""
-					onClick={() => {}}
 				/>
-
+               </Link>
 				<img
 					className="Img5"
 					src="https://raw.githubusercontent.com/AbhijitAher/MyFitnessPal_U5/main/myfitnesspal/public/Images/premium/image5.jpg"
