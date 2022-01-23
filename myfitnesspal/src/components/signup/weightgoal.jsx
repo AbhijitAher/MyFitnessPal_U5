@@ -1,49 +1,69 @@
 import React, { useState } from "react";
 import "./welcome.css";
-import "./weightgoal.css"
-export const LooseWeight=()=>{
- const [text,setText]=React.useState("");
-    return(
-        <div>
-          <div className="nav_container">
-            <div className="nav">
-            <div className="btn1"><button className="myfit">myfitnesspal</button></div>
-          </div>
-        </div>
-        <div className="nav_bottom_div">
-        <div className="weight_goal" > 
-        <h2>What is your weight goal?</h2> 
-        <div className="wgt">
-        <ul>
-    <li>
-        <div className="weight_type">
-        <input type='radio' value='1' name='radio' id='radio1' onChange={(e)=> setText(e.target.value)}/>
-        <label for='radio1'>Lose Weight</label>
-        </div>
-    </li>
-    <li>
-        <div className="weight_type">
-        <input type='radio' value='2' name='radio'  id='radio2' onChange={(e)=> setText(e.target.value)}/>
-        <label for='radio2'>Maintain Weight</label>
-        </div>
-    </li>
-    <li>
-        <div className="weight_type">
-        <input type='radio' value='3' name='radio'  id='radio3' onChange={(e)=> setText(e.target.value)}/>
-        <label for='radio3'>Gain Weight</label>
-        </div>
-    </li>
-</ul>
-           <div className="btn_footer">
-            <button className="btn_bn back">Back</button>
-            <button className="btn_bn next">Next</button>
-        </div>
-</div>
-</div>
-</div> 
-</div>
-       
-        
+import "./weightgoal.css";
+export const LooseWeight = () => {
+	const [text, setText] = React.useState("");
 
-    )
-}
+	return (
+		<div>
+			<div className="nav_container">
+				<div className="nav">
+					<div className="btn1">
+						<button className="myfit">myfitnesspal</button>
+					</div>
+				</div>
+			</div>
+			<div className="nav1_bottom_div">
+				<div className="weight_goal_choose">
+					
+					<div className="weight_goal_bottom_div">
+				    	<p style={{marginBottom:"50px",fontSize:"20px",color:"#222628",fontWeight:"700",lineHeight:"1.2",fontFamily: "Neue Plak UA, Helvetica, Arial, -apple-system, sans-serif"
+}} >What is your weight goal?</p>
+						<ul className="ul1">
+							<li className="li1">
+								<div className="weight_type_choose">
+									<input className="weight_goal_input"
+										type="radio"
+										value="1"
+										name="radio"
+										id="radio1"
+										onChange={(e) => setText(e.target.value)}
+									/>
+									<label className="weight_type_label" for="radio1">Lose Weight</label>
+								</div>
+							</li>
+							<li className="li1">
+								<div className="weight_type_choose">
+									<input className="weight_goal_input"
+										type="radio"
+										value="2"
+										name="radio"
+										id="radio2"
+										onChange={(e) => setText(e.target.value)}
+									/>
+									<label className="weight_type_label" for="radio2">Maintain Weight</label>
+								</div>
+							</li>
+							<li className="li1">
+								<div className="weight_type_choose">
+									<input className="weight_goal_input" 
+										type="radio"
+										value="3"
+										name="radio"
+										id="radio3"
+										onChange={(e) => setText(e.target.value)}
+									/>
+									<label className="weight_type_label" for="radio3">Gain Weight</label>
+								</div>
+							</li>
+						</ul>
+						<div className="btn_footer_div_main">
+							<button className="btn_bn_same back_btn_same">Back</button>
+							<button className="btn_bn_same next_btn_same">Next</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};

@@ -1,6 +1,6 @@
 .bottom_nav_div{
     width: 100%;
-    height: 1000px;
+    height: 800px;
     opacity: 1;
     position: absolute;
     inset: 0px;
@@ -13,13 +13,13 @@
 }
 .Address_div{
     box-sizing: border-box;
-    margin:150px auto;
+    margin:120px auto;
     
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    width:600px;
-    height:700px;
+    width:500px;
+    height:600px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
@@ -31,18 +31,18 @@
 }
 .Address_bottom_div{
     width:90%;
-    height:600px;
+    height:500px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
-    margin:30px auto;
+    margin:50px auto;
 }
 .order_ul {
     width:90%;
-    height:600px;
+    height:500px;
     list-style: none;
     display:flex;
     flex-direction:column;
@@ -58,6 +58,7 @@
 .gender_type{
     width: 60%;
     height: 60px;
+
     vertical-align: middle;
     align-items: center;
     display: flex;
@@ -67,30 +68,31 @@
 }
 .radio {
     color: #222628;
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     cursor: pointer; 
-    margin-top: -40px; 
+    margin-top: -10px; 
 }
 .head_para{
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
     color: #222628;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif; 
 }
-input[type='radio'] {
+.radio_input{
     -webkit-appearance:none;
-    width:26px;
-    height:24px;
-    border:1px solid  rgb(0, 102, 238);;
+    width:20px;
+    height:20px;
+    margin-top: 8px;
+    border:2px solid  #222628;
     border-radius:50%;
     margin-right: 10px;
     outline:none;
   
 }
-input[type='radio']:before {
+.radio_input:before {
     content:'';
     display:block;
     width:60%;
@@ -99,9 +101,12 @@ input[type='radio']:before {
     border-radius:50%; 
     
 }
-input[type='radio']:checked:before {
+.radio_input:checked:before {
     
     background: rgb(0, 102, 238);
+}
+.para2{
+    margin-top: 20px;
 }
 
 .born_detail{
@@ -111,23 +116,25 @@ input[type='radio']:checked:before {
     align-items: center;
     vertical-align: middle;
     justify-content: space-between;
-    margin-top: -20px;
+  
     width: 100%;
-    height: 80px;
+    height: 40px;
 }
 .dates{
+    
     width: 40%;
     height: 40px;
 }
-input[type="date"]{
+.input_date{
     width: 100%;
     height: 40px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 14px;
     color: #6D717A;
     border-radius: 4px;
     border: 2px solid rgb(222, 225, 231);
 }
-input[type="date"]:focus{
+.input_date:focus{
 outline-color: rgb(0, 102, 238);
 }
 .detail{
@@ -146,9 +153,10 @@ outline-color: rgb(0, 102, 238);
     border-radius: 5px;
    
     background: none;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
     color: #222628;
-    height:34px
+    height:40px
 }
 .pin1{
     color: #222628;
@@ -161,14 +169,14 @@ outline-color: rgb(0, 102, 238);
 }
 .pin{
     position: relative;
-    top: -2.4rem;
+    top: -2.2rem;
    left: 1.4rem;
     cursor: text;
 
 }
 .pin{
     color: #6D717A;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     padding: 5px;
@@ -182,18 +190,18 @@ outline-color: rgb(0, 102, 238);
 }
 
 .pin1:focus~.pin{
-    top: -3.9rem;
+    top: -3.5rem;
     left: 1rem;
-    font-size: 14px;
+    font-size: 12px;
   
     background: white;
 }
 .textbox{
     color: #222628;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 5px;
+  
     padding: 5px;
     padding-left: 5px;
     font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
@@ -210,7 +218,7 @@ outline-color: rgb(0, 102, 238);
 .form_label{
     font-weight: 400;
     line-height: 1.2;
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 10px;
     font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
     color: #222628;
@@ -222,14 +230,14 @@ outline-color: rgb(0, 102, 238);
     flex-direction: row;
     justify-content: space-between;
     width:80%;
-    height: 80px;
+    height: 50px;
     margin-top:20px;
 }
 .BN{
     border: 2px solid rgb(0, 102, 238);
 
     width: 48%;
-    height: 60px;
+    height: 50px;
     border-radius: 4px;
     padding: 8px 20px;
     letter-spacing: 0.015625rem;
@@ -253,10 +261,11 @@ outline-color: rgb(0, 102, 238);
     background-color: white;
 }
 .para_text{
+    margin-top: 40px;
     text-align: center;
     width: 80%;
     color: #6D717A;
-    font-size: 17px;
+    font-size: 14px;
 }
 @media(max-width:800px) {
     .weight_goal{
@@ -284,6 +293,7 @@ outline-color: rgb(0, 102, 238);
    
   }
  
+  
   
  
  
