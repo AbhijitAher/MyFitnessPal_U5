@@ -1,4 +1,5 @@
 import "./App.css";
+
 import { HomePage } from "./components/Homepage";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -13,6 +14,9 @@ import { BodyScan } from "./components/signup/bodyscanpg";
 import { WeightReduce } from "./components/signup/WeightReducepg";
 import { AllApps } from "./components/allApps/AllApps";
 import { Goals } from "./components/goals/Goals";
+ import { CreateAccount } from "./components/signup/createaccount_pg";
+ import { Login } from "./components/signup/loginpg";
+ import { CreateUsername } from "./components/signup/create_usernamepg";
 
 import { Premium } from "./components/premium/Premium";
 
@@ -22,40 +26,47 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<Routes>
-				<Route path="/" element={<HomePage />}></Route>
-				<Route path="/food" element={<Food />}></Route>
-               <Route path="/food/:name" element={<Food/>}></Route>
+
+					<Route path="/" element={<HomePage />}></Route>
+				  <Route path="/food" element={<Food />}></Route>
+          <Route path="/food/:name" element={<Food/>}></Route>
 
 				<Route path="/goals" element={<Goals />}></Route>
 				<Route path="/apps" element={<AllApps />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
 
-
-				<Route path="/payment" element={<Payment />}></Route>
- 
 				{/* Signup Page 1 */}
-				<Route path="/signup/welcome" element={<Welcome />}></Route>
+				 <Route path="/signup/welcome" element={<Welcome />}></Route> 
 
 				{/* Signup Page 2 */}
-				<Route path="/signup/weightgoal" element={<LooseWeight />}></Route>
+				 <Route path="/signup/weightgoal" element={<LooseWeight />}></Route> 
 
 				{/* Signup Page 3 */}
-				<Route
+				  <Route
 					path="/signup/activitylevel"
 					element={<BaselineActivity />}
-				></Route>
+				></Route> 
 
 				{/* Signup Page 4 */}
-				<Route path="/signup/details" element={<Detail />}></Route>
+				  <Route path="/signup/details" element={<Detail />}></Route> 
 
 				{/* Signup Page 5 - Goals*/}
-				<Route path="/signup/goals" element={<BodyScan />}></Route>
+				  <Route path="/signup/checkout" element={<BodyCheckout />}></Route> 
 
-				<Route path="/premium" element={<Premium />}></Route>
-
-				{/* Signup Page 6 */}
-				<Route path="/signup/weeklygoal" element={<WeightReduce />}></Route>
-			</Routes>
+        {/* Signup Page 6 */}
+				 <Route path="/signup/weeklygoal" element={<WeightReduce />}></Route>
+			
+				{/* signup page 7 */}
+				 <Route path="/signup/createaccount" element={<CreateAccount />}></Route>
+				
+				{/* signup page 8 */}
+				<Route path="/signup/login" element={<Login />}></Route>
+				
+				{/* signup page 9 */}
+				 <Route path="/signup/createusername" element={<CreateUsername />}></Route>
+				</Routes>  
 			<Footer />
+			
 		</div>
 	);
 }

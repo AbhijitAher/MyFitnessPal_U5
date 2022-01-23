@@ -1,6 +1,7 @@
-.nav_bottom_div{
+.nav1_bottom_div{
     width: 100%;
     opacity: 1;
+    height: 650px;
     position: absolute;
     inset: 0px;
     background:url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=1920&q=75");
@@ -9,15 +10,15 @@
   background-size: cover;
   background-color: #F0F2F4;
 }
-.weight_goal{
+ .weight_goal_choose{
     box-sizing: border-box;
-    margin:150px auto;
+    margin:120px auto;
     
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    width:40%;
-    height:600px;
+    width:500px;
+    height:500px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
@@ -26,81 +27,93 @@
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
    background-color: white;
    box-shadow: rgb(0 0 0 / 12%) 0px 8px 40px;
-}
-.wgt{
+} 
+.weight_goal_bottom_div{
     width:80%;
-    height:600px;
+    height:500px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: center;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
-    margin:30px auto;
+    margin:50px auto;
 }
 
-/* ul {
+
+.ul1 {
+    width: 100%;
+    
+
     list-style: none;
     display:flex;
     flex-direction:column;
     row-gap:10px;
-    text-align:left;
+   
     margin: auto;
 }
-li {
-    display: inline-block;
+.li1 {
+    width: 100%;
    
-} */
-.weight_type{
-    width:80%;
-    height: 50px;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    line-height: 1.75;
+
+}
+ .weight_type_choose{
+    width:90%;
+   height: 50px;
+  
+
     border: 2px solid rgb(222, 225, 231);
     color: rgb(34, 38, 40);
     text-transform: none;
     border-radius: 4px;
-    margin: 2px 0px;
+   
     background-color: rgb(255, 255, 255);
-    padding: 14px;
-}
-/* input {
+
+   
+    
+} 
+.weight_goal_input {
+    margin-top: 15px;
+
     visibility:hidden;
 }
-label {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1.5;
+.weight_type_label {
+   vertical-align: middle;
+   
+    font-size: 16px;
+    font-weight: 400;
+   
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     cursor: pointer;
 }
-input:checked + label {
+.weight_goal_input:checked + .weight_type_label {
     color: rgb(0, 102, 238);
-    
-} */
+
+    font-weight: 600;
+}
+
 .weight_type.Mui-selected{
     border: rgb(0, 102, 238);
 }
-.weight_type:hover{
+.weight_type_choose:hover{
     border-color: grey;
 }
-.btn_footer{
+.btn_footer_div_main{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width:80%;
-    height: 80px;
-    margin:80px auto;
+    height: 50px;
+    margin:50px auto;
 }
-.btn_bn{
+.btn_bn_same{
     border: 2px solid rgb(0, 102, 238);
 
-    width: 48%;
-    height: 60px;
+    width: 46%;
+    height: 50px;
     border-radius: 4px;
-    padding: 8px 20px;
+   
     letter-spacing: 0.015625rem;
   
     vertical-align: middle;
@@ -111,35 +124,37 @@ input:checked + label {
     font-size: 20px;
     line-height: 1.75;
     text-transform: uppercase;
-    min-width: 64px;
+   
     transition: background-color 250ms
 }
-.next{
+.next_btn_same{
     color:white;
     background-color: rgb(0, 102, 238);;
 }
-.back{
+.back_btn_same{
     color: rgb(0, 102, 238);
     background-color: white;
 }
 @media(max-width:800px) {
-    .weight_goal{
+    .weight_goal_choose{
         margin-top:50px;
         width: 100%;
 
     }
-    .btn_footer{
+    .btn_footer_div_main{
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
-    .btn_bn{
+    .btn_bn_same{
         width: 100%;
         padding: 0px;
     }
-    .next{
-        width:700px;
+    .next_btn_same{
+        width:100%;
         display: inline-block;
     }
-    .back{
+    .back_btn_same{
 
         visibility: hidden;
     }

@@ -1,6 +1,6 @@
-.nav_bottom_container{
+.nav_bottom_container1{
     width: 100%;
-    height: 1000px;
+    height: 800px;
     opacity: 1;
     position: absolute;
     inset: 0px;
@@ -13,13 +13,13 @@
 }
 .input_container{
     box-sizing: border-box;
-    margin:150px auto;
+    margin:120px auto;
     
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width:600px;
-    height:750px;
+    height:650px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
@@ -31,14 +31,14 @@
 }
 .user_detail{
     width:90%;
-    height:600px;
+    height:500px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
-    margin:30px auto;
+    margin:50px auto;
 }
 .u_l {
     width:80%;
@@ -57,18 +57,21 @@
 }
 .heading{
    text-align: left;
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom:15px ;
     color: #222628;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
 
 }
 .text{
     color: #6D717A;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 14px;
     width: 100%;
+}
+.Userdetail{
+    margin-top: 10px;
 }
 .User{
    width: 200px;
@@ -114,14 +117,14 @@ outline-color: rgb(0, 102, 238);;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    width:80%;
+    width:100%;
     height: 80px;
    
 }
 .btn_BN{
     border: 2px solid rgb(0, 102, 238);
 
-    width: 48%;
+    width: 200px;
     height: 60px;
     border-radius: 4px;
     padding: 8px 20px;
@@ -132,6 +135,7 @@ outline-color: rgb(0, 102, 238);;
     text-decoration: none;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     font-weight: 500;
+    text-align: center;
     font-size: 20px;
     line-height: 1.75;
     text-transform: uppercase;

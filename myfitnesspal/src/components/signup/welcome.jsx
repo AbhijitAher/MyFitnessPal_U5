@@ -1,6 +1,9 @@
 import React from "react";
 import "./welcome.css";
-import {Link} from "react-router-dom"
+
+import "./loginpg.jsx"
+import { Link, Router, BrowserRouter } from 'react-router-dom'
+
 //import React from "react";
 //import "./welcome_nav.css"
 export const Welcome = () => {
@@ -9,12 +12,15 @@ export const Welcome = () => {
 			<div className="nav_container">
 				<div className="nav">
 					<div className="btn1">
-					<Link to="/">
-					<button className="myfit">myfitnesspal</button>
-						</Link>	
+
+						<button className="myfit">myfitnesspal</button>
 					</div>
 					<div className="btn1">
-						<button className="log">Login</button>
+						{/* <button className="log" onClick={()=>{
+
+						}}>Login</button> */}
+						<Link className="log" style={{textDecoration:"none"}} to="/signup/login">Login</Link>
+
 					</div>
 				</div>
 			</div>
@@ -26,7 +32,10 @@ export const Welcome = () => {
 								Welcome! Just a few quick questions so we can customize
 								MyFitnessPal for you.
 							</h2>
-							<button className="btn">Continue</button>
+
+							{/* <button className="btn">Continue</button> */}
+							<Link className="btn" style={{textDecoration:"none"}} to="/signup/weightgoal">Continue</Link>
+
 						</div>
 					</div>
 				</div>

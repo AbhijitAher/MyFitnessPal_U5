@@ -3,22 +3,22 @@
     opacity: 1;
     position: absolute;
     inset: 0px;
-    height: 1000px;
+    height: 800px;
     background:url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=1920&q=75");
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #F0F2F4;
 }
-.weight_choose_goal{
+.weight_choose_goal2{
     box-sizing: border-box;
-    margin:150px auto;
+    margin:120px auto;
     
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width:40%;
-    height:800px;
+    height:600px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
@@ -29,8 +29,8 @@
    box-shadow: rgb(0 0 0 / 12%) 0px 8px 40px;
 }
 .weight_selection{
-    width:85%;
-    height:800px;
+    width:80%;
+    height:500px;
     border-radius: 12px;
     color: rgb(34, 38, 40);
     font-size: 1rem;
@@ -39,11 +39,11 @@
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     margin:50px auto;
 }
-.heading{
+.heading12{
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
 }
@@ -57,9 +57,10 @@
     text-align:left;
     margin:50px auto;
 }
-.para{
+.para01{
     color: #6D717A;
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
 }
 .list {
   
@@ -74,12 +75,19 @@
     vertical-align: middle;
     line-height: 1.75;
     border: 2px solid rgb(222, 225, 231);
-    color: rgb(34, 38, 40);
+    
     text-transform: none;
     border-radius: 4px;
-    margin: 2px 0px;
+   
     background-color: rgb(255, 255, 255);
-    padding: 14px;
+    padding: 10px;
+}
+.weightsel_type_label{
+    font-size: 14px;
+    text-align: center;
+  
+    margin-bottom: 10px;
+    line-height: 1.75;
 }
 .weightsel_type:active{
     outline:2px solid rgb(0, 102, 238);
@@ -87,15 +95,10 @@
 .weightsel_type:hover{
     outline:2px solid rgb(0, 102, 238);
 }
-/* input {
+
+.weightsel_type_input{
+
     visibility:hidden;
-}
-label {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
-    cursor: pointer;
 }
 input:checked + label {
     color: rgb(0, 102, 238);
@@ -107,15 +110,15 @@ input:checked + label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width:80%;
+    width:90%;
     height: 80px;
-    margin:80px auto;
+    margin:50px auto;
 }
 .button_bn{
     border: 2px solid rgb(0, 102, 238);
 
-    width: 48%;
-    height: 60px;
+    width: 46%;
+    height: 50px;
     border-radius: 4px;
     padding: 8px 20px;
     letter-spacing: 0.015625rem;
@@ -153,7 +156,7 @@ input:checked + label {
         padding: 0px;
     }
     .next_btn{
-        width:700px;
+        width:100%;
         display: inline-block;
     }
     .back_btn{
