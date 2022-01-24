@@ -59,11 +59,11 @@
 }
 
 .cat_title {
-  font-size: 16px;
+  font-size: 17px;
   line-height: normal;
   letter-spacing: normal;
-  margin-left: 18%;
-  margin-bottom: 0;
+  margin: 5% 4%;
+  /* margin-bottom: 0; */
   font-weight: 500;
 }
 
