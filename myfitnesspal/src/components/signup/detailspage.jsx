@@ -1,5 +1,10 @@
 import "./welcome.css";
 import "./detail.css";
+
+import  "./activitylevelpage.jsx"
+import  "./bodyscanpg.jsx"
+import { Link,Routes,Route } from "react-router-dom";
+
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
@@ -35,12 +40,16 @@ export const Detail = () => {
 								</p>
 								<div className="gender_type">
 									<label className="radio">
-										<input type="radio" value="Male" name="radio" />
+
+										<input type="radio" className="radio_input" value="Male" name="radio" />
+
 										Male
 										<span className="checkmark"></span>
 									</label>
 									<label className="radio">
-										<input type="radio" value="Female" name="radio" />
+
+										<input type="radio" className="radio_input" value="Female" name="radio" />
+
 										Female
 										<span className="checkmark"></span>
 									</label>
@@ -51,7 +60,9 @@ export const Detail = () => {
 								<p className="head_para">When were you born?</p>
 
 								<div className="dates">
-									<input
+
+									<input className="input_date"
+
 										type="date"
 										placeholder="dd/mm/yy"
 										onChange={handleChange}
@@ -59,13 +70,16 @@ export const Detail = () => {
 								</div>
 							</li>
 							<li className="list_li">
-								<p className="head_para">Where do you live?</p>
+
+								<p className="head_para para2">Where do you live?</p>
+
 								<div className="born_detail">
 									<div className="detail">
 										<Select
 											className="textbox"
 											options={options}
 											value={value}
+
 											placeholder="country"
 											size="lg"
 											onChange={changeHandler}
@@ -90,8 +104,13 @@ export const Detail = () => {
 								</p>
 
 								<div className="bottom_div">
-									<button className="BN btn1_back">Back</button>
-									<button className="BN btn2_next">Next</button>
+
+								<Link className="BN btn1_back" style={{textDecoration:"none"}} to="/signup/activitylevel">Back</Link>
+						         <Link className="BN btn2_next" style={{textDecoration:"none"}} to="/signup/checkout">Next</Link>
+						
+									{/* <button className="BN btn1_back">Back</button>
+									<button className="BN btn2_next">Next</button> */}
+
 								</div>
 							</li>
 						</ul>

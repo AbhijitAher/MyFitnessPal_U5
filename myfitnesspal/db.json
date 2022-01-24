@@ -1,0 +1,88 @@
+{
+    "allapps": [
+      {
+        "id": 1,
+        "name": "Fitbit",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_1_10_0_45741.png",
+        "type": "Activity Traker",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 101,
+        "name": "MisFit",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_282_1_10_0_81543.png",
+        "type": "Activity Traker",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 2,
+        "name": "Polar Flow",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_331_1_10_0_52964.png",
+        "type": "Step Traker",
+        "link": "https://flow.polar.com/"
+      },
+      {
+        "id": 102,
+        "name": "Garmin Connnect",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_1_10_0_9523.png",
+        "type": "Step Traker",
+        "link": "https://flow.polar.com/"
+      },
+      {
+        "id": 3,
+        "name": "Qardio",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_376_1_10_0_45931.png",
+        "type": "Scales",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 4,
+        "name": "Tictrac",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_client_87_1_10_0_1001.png",
+        "type": "Lifestyle",
+        "link": "https://www.tictrac.com/"
+      },
+      {
+        "id": 5,
+        "name": "Goji Play",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_125_1_10_0_79468.png",
+        "type": "Wearables",
+        "link": "https://www.bluegoji.com/"
+      },
+      {
+        "id": 105,
+        "name": "Wahoo RFLKT",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_164_1_10_0_23928.png",
+        "type": "Wearables",
+        "link": "https://www.bluegoji.com/"
+      },
+      {
+        "id": 6,
+        "name": "MapMyRun",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_1_10_0_3668.png",
+        "type": "Fitness App",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 7,
+        "name": "xID",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_86_1_10_0_19952.png",
+        "type": "Exercise Equipments",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 107,
+        "name": "LFconnnect",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_277_1_10_0_23608.png",
+        "type": "Exercise Equipments",
+        "link": "GUBGMHVpwcTsPFvNNVdG5DKtpv6UwksAfzw5aULcGzgG"
+      },
+      {
+        "id": 8,
+        "name": "Glow",
+        "img": "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_130_1_10_0_23647.png",
+        "type": "Fertility",
+        "link": "https://glowing.com/"
+      }
+    ]
+  }
