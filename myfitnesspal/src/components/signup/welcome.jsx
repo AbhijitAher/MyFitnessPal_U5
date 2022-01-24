@@ -13,7 +13,7 @@ export const Welcome = () => {
 				<div className="nav">
 					<div className="btn1">
 
-						<button className="myfit">myfitnesspal</button>
+					<Link to={"/"}>	<button className="myfit">myfitnesspal</button></Link>
 					</div>
 					<div className="btn1">
 						{/* <button className="log" onClick={()=>{
