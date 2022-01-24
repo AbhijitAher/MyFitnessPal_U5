@@ -39,7 +39,7 @@ export const Login = () => {
                         <p className="form_heading">Member Login Page</p>
                             <div className="input_div1">
                             <input className="form_input" type="email" placeholder=" Email address" onChange={handleChange}/>
-                            <input className="form_input" type="password" placeholder="create a password" onChange={handleChange}/>
+                            <input className="form_input" type="password" placeholder="Enter password" onChange={handleChange}/>
                             <p className="input_bottom_text">Must be at least 10 characters, no spaces.</p>
                             </div>
                             <div className="btn_div1"> 
