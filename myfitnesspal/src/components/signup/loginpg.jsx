@@ -46,7 +46,7 @@ export const Login = () => {
                             <p className="input_bottom_text1">By signing up for MyFitnessPal, you are agreeing to our <a>Privacy Policy</a> and <a>Terms.</a></p>
                                 <button className="continue_btn">Continue</button>
                                 </div>
-                             
+
                         </form>
 								
 					</div>
