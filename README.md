@@ -19,6 +19,7 @@
 - **[Shivam Sharma](https://github.com/Shivam2101s)**
 - **[Prasad Baviskar](https://github.com/PrasadBaviskar)**
 - **[Abhijit Aher](https://github.com/AbhijitAher)**
+- **[Rajdeep Kumar Singh](https://github.com/rajdeep9565)**
 
 ---
 
