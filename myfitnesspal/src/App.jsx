@@ -41,7 +41,7 @@ function App() {
         {/* Signup Page 2 */}
         <Route path="/signup/weightgoal" element={<LooseWeight />}></Route>
 
-        {/* Signup Page 3 */}
+        {/* Signup  Page 3 */}
         <Route
           path="/signup/activitylevel"
           element={<BaselineActivity />}
