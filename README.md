@@ -5,14 +5,6 @@
 
 > This is a team project, built by us in the Construct Week - Unit 5 at Masai School.
 
-#### Presentation Video: 
-- **[Checkout The Demo Video On LinkedIn]()**
-
-#### Project Demo: 
-- **[Checkout The Live Project Demo]()**
-
-
-
 ### Our Team Members :heart:
 
 - **[Vishal Singh](https://github.com/VishalSingh9719)**
